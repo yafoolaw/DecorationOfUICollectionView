@@ -8,6 +8,8 @@
 
 import UIKit
 
+let decorationIdentifier = "DecorationIdentifier"
+
 class DecorationView: UICollectionReusableView {
     
     var imageView : UIImageView?
@@ -16,7 +18,8 @@ class DecorationView: UICollectionReusableView {
         
         super.init(frame: frame)
         
-        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 90))
+        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 120))
+        self.imageView!.image = UIImage(named: "SingleBookShelf")
         
         self.addSubview(imageView!)
     }
@@ -24,14 +27,5 @@ class DecorationView: UICollectionReusableView {
     required init?(coder aDecoder: NSCoder) {
         
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
-        
-        super.applyLayoutAttributes(layoutAttributes)
-        
-        let demoAttributes = layoutAttributes as! DemoLayoutAttributes
-        
-        self.imageView?.image = demoAttributes.image
     }
 }
