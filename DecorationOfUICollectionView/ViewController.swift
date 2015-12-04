@@ -2,8 +2,11 @@
 //  ViewController.swift
 //  DecorationOfUICollectionView
 //
-//  Created by 刘延峰 on 15/12/3.
+//  Created by FrankLiu on 15/12/3.
 //  Copyright © 2015年 刘大帅. All rights reserved.
+//
+//  https://github.com/yafoolaw
+//  http://www.jianshu.com/users/09e77d340dcf/latest_articles
 //
 
 import UIKit
@@ -51,7 +54,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         return (self.dataArray?.count)!
     }
-
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
